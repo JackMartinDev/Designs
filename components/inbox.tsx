@@ -6,7 +6,7 @@ import InboxMail from "./inbox-mail";
 
 const Inbox = () => {
   return (
-    <div className="flex flex-col w-96 h-full border-r border-grey-300">
+    <div className="flex flex-col w-96 h-full border-r border-gray-300">
       <div className="h-[52px] flex flex-row justify-between items-center p-4">
         <p className="font-semibold text-xl">Inbox</p>
         <div className="bg-gray-100 p-[4px] rounded-md">

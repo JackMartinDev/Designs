@@ -19,7 +19,7 @@ const iconClass = "mr-2 h-4 w-4";
 
 const Sidebar = () => {
   return (
-    <div className="w-72 h-full border-r border-grey-300">
+    <div className="w-72 h-full border-r border-gray-300">
       <div className="p-1.5">
         <SelectMenu />
       </div>
