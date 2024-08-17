@@ -1,6 +1,8 @@
 import Divider from "./divider";
 
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { Input } from "./ui/input";
+import InboxMail from "./inbox-mail";
 
 const Inbox = () => {
   return (
@@ -29,6 +31,21 @@ const Inbox = () => {
         </div>
       </div>
       <Divider />
+      <div className="flex flex-col gap-3 p-4 h-full overflow-y-hidden">
+        <Input placeholder="Search" />
+        <div className="flex flex-col gap-2 overflow-y-auto custom-scrollbar">
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+          <InboxMail />
+        </div>
+      </div>
     </div>
   );
 };
