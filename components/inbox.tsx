@@ -9,13 +9,19 @@ const Inbox = () => {
         <p className="font-semibold text-xl">Inbox</p>
         <div className="bg-gray-100 p-[4px] rounded-md">
           <ToggleGroup type="single" defaultValue="all">
-            <ToggleGroupItem value="all" aria-label="Toggle all mail" size="sm">
+            <ToggleGroupItem
+              value="all"
+              aria-label="Toggle all mail"
+              size="xs"
+              variant="custom"
+            >
               All mail
             </ToggleGroupItem>
             <ToggleGroupItem
               value="unread"
               aria-label="Toggle unread mail"
-              size="sm"
+              variant="custom"
+              size="xs"
             >
               Unread
             </ToggleGroupItem>
