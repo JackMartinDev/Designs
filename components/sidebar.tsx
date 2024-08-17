@@ -13,12 +13,17 @@ import {
   UsersRound,
 } from "lucide-react";
 import Divider from "./divider";
+import SelectMenu from "./select";
 
 const iconClass = "mr-2 h-4 w-4";
 
 const Sidebar = () => {
   return (
-    <div className="w-1/6 border-r border-grey-300">
+    <div className="w-72 h-full border-r border-grey-300">
+      <div className="p-1.5">
+        <SelectMenu />
+      </div>
+      <Divider />
       <div className="flex flex-col p-1.5">
         <ListButton
           selected

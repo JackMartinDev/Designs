@@ -19,6 +19,7 @@ const ListButton = ({ label, count, icon, variant, selected }: Props) => {
   return (
     <Button
       variant={selected ? "default" : "ghost"}
+      size="sm"
       className="flex flex-row justify-between w-full"
     >
       <div className="flex flex-row items-center">
