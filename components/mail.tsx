@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
+import EmailHeader from "./email-header";
 
 const iconClass = "h-4 w-4";
 
@@ -66,6 +67,8 @@ const Mail = () => {
           </DropdownMenu>
         </div>
       </div>
+      <Divider />
+      <EmailHeader />
       <Divider />
     </div>
   );
