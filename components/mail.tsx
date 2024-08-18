@@ -19,6 +19,9 @@ import {
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 import EmailHeader from "./email-header";
+import { Textarea } from "./ui/textarea";
+import { Switch } from "./ui/switch";
+import { Label } from "./ui/label";
 
 const iconClass = "h-4 w-4";
 
@@ -70,6 +73,16 @@ const Mail = () => {
       <Divider />
       <EmailHeader />
       <Divider />
+      <div>
+        <Textarea placeholder="Reply William Smith..." />
+        <div className="flex flex-row justify-between">
+          <div className="flex items-center space-x-2">
+            <Switch id="mute" />
+            <Label htmlFor="mute">Mute this thread</Label>
+          </div>
+          <Button size="sm">Send</Button>
+        </div>
+      </div>
     </div>
   );
 };
