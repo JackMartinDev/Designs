@@ -74,7 +74,10 @@ const Mail = () => {
       <EmailHeader />
       <Divider />
       <div>
-        <Textarea placeholder="Reply William Smith..." />
+        <Textarea
+          placeholder="Reply William Smith..."
+          className="resize-none"
+        />
         <div className="flex flex-row justify-between">
           <div className="flex items-center space-x-2">
             <Switch id="mute" />
