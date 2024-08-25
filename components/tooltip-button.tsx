@@ -9,15 +9,20 @@ import {
 
 type Props = {
   label: string;
+  rounded?: boolean;
   children: ReactNode;
 };
 
-const TooltipButton = ({ label, children }: Props) => {
+const TooltipButton = ({ label, rounded, children }: Props) => {
   return (
     <TooltipProvider delayDuration={0}>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button variant="ghost" size="icon">
+          <Button
+            variant="ghost"
+            size="icon"
+            className={rounded ? "rounded-full" : ""}
+          >
             {children}
           </Button>
         </TooltipTrigger>
