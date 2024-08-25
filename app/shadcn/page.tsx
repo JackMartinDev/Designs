@@ -4,7 +4,7 @@ import Sidebar from "@/components/sidebar";
 
 const ShadCn = () => {
   return (
-    <div className="border border-gray-300 rounded-xl shadow-md p-0 flex flex-row h-[85vh]">
+    <div className="border border-gray-300 rounded-xl shadow-md p-0 flex flex-row h-[82vh]">
       <Sidebar />
       <Inbox />
       <Mail />
